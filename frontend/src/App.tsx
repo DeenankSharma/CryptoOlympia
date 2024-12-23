@@ -4,6 +4,7 @@ import LoginPage from "./pages/LoginPage";
 import { ThemeProvider } from "./components/ThemeProvider";
 
 export default function AppRouter(){
+
  return(
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
         <Router>

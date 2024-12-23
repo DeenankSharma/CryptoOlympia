@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -98,6 +99,8 @@ body{
   align-items: center;
 }
 
+
+
 .landing_logo,.landing_about,.landing_marketplace,.landing_login_signup,.landing_theme{
   padding:5px;
   border-radius: 5%;
@@ -107,6 +110,17 @@ body{
   font-size: large;
   font-style: normal;
   transition: background-color  .1s;
+}
+
+.dropdown-style {
+  padding: 5px;
+  border-radius: 5%;
+  font-family: "Josefin Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: large; 
+  font-style: normal; 
+  cursor: pointer;
 }
 
 .landing_logo:hover,.landing_about:hover,.landing_marketplace:hover,.landing_login_signup:hover{
@@ -127,8 +141,8 @@ body{
 }
 
 .bg_vid{
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 
 video{
