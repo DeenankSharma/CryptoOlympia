@@ -91,7 +91,7 @@ body{
 .landing_navbar{
   margin-top:1%;
   width: 100%;
-  position: fixed;
+  position: absolute;
   top: 0;
   display: flex;
   flex-direction: row;
@@ -126,7 +126,10 @@ body{
 .landing_logo:hover,.landing_about:hover,.landing_marketplace:hover,.landing_login_signup:hover{
   background-color: #484848;
   cursor: pointer;
-  
+}
+
+.selected_navitem{
+  background-color: #484848;
 }
 
 .landing_theme{
@@ -150,4 +153,30 @@ video{
   height: 100%;
   width: 100%;
   opacity: 0.5;
+}
+
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  
+}
+
+.headings_about{
+  text-align: start;
+}
+
+.about_main{
+  height: 90vh;
+  margin-top: 10vh;
+  overflow-x: hidden;
+  padding-bottom: 6vh;
+}
+
+.about_left{
+  overflow-x: hidden;
+
 }
