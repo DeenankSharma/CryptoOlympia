@@ -103,6 +103,7 @@ body{
 
 .landing_logo,.landing_about,.landing_marketplace,.landing_login_signup,.landing_theme{
   padding:5px;
+  padding-bottom: 0;
   border-radius: 5%;
   font-family: "Josefin Sans", serif;
   font-optical-sizing: auto;
@@ -123,6 +124,11 @@ body{
   cursor: pointer;
 }
 
+.heading_text{
+  font-family: "Josefin Sans", serif;
+  font-optical-sizing: auto;
+}
+
 .landing_logo:hover,.landing_about:hover,.landing_marketplace:hover,.landing_login_signup:hover{
   background-color: #484848;
   cursor: pointer;
@@ -139,7 +145,7 @@ body{
 }
 .theme_title{
   /* display: flex; */
-  /* flex-direction: row; */
+  /* flex-direction: row; */  
   margin-right: 10px;
 }
 
@@ -180,3 +186,5 @@ video{
   overflow-x: hidden;
 
 }
+
+

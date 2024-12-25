@@ -2,7 +2,7 @@ import OrbitingCircles from "../components/ui/orbiting-circles";
 
 export function TechnologyUsed() {
   return (
-    <div className="relative flex h-[620px] w-full flex-col items-center justify-center overflow-hidden rounded-lg  bg-background md:shadow-xl">
+    <div className="relative flex h-[640px] w-full flex-col items-center justify-center overflow-hidden rounded-lg  bg-background md:shadow-xl">
       <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-white bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-black">
         Technology
       </span>

@@ -4,6 +4,7 @@ import GradualSpacing from '@/components/ui/gradual-spacing';
 import Navbar from '@/components/NavBar';
 import { useNav } from '@/context/NavBarContext';
 import About from '@/components/About';
+import MarketPlace from '@/components/MarketPlace';
 
 
 export default function LandingPage() {
@@ -19,11 +20,11 @@ export default function LandingPage() {
                     </div>
                     <div className='pr-4 absolute top-1/2 left-1/2 w-[32rem] -translate-x-1/2 -translate-y-1/2'>
                         <GradualSpacing
-                            className="font-display mb-1 text-center text-8xl font-bold -tracking-widest  text-black dark:text-white md:leading-[5rem]"
+                            className="heading_text font-display mb-1 text-center text-8xl font-bold -tracking-widest  text-black dark:text-white md:leading-[5rem]"
                             text="Crypto"
                         />
                         <GradualSpacing
-                            className="font-display mt-1 text-center text-8xl font-bold -tracking-widest  text-black dark:text-white md:leading-[5rem]"
+                            className="heading_text font-display mt-1 text-center text-8xl font-bold -tracking-widest  text-black dark:text-white md:leading-[5rem]"
                             text="Olympia"
                         />
                     </div>
@@ -40,6 +41,13 @@ export default function LandingPage() {
                 </>
             )
             break
+        case 3:
+            return(
+                <>
+                <Navbar/>
+                <MarketPlace/>
+                </>
+            )
 
     }
 

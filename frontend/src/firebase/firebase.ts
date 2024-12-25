@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import {getAuth} from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDKqlfPOn0Fn1uUmiHch-brrKT7gFRuh4Y",
-  authDomain: "cryptoolympia.firebaseapp.com",
-  projectId: "cryptoolympia",
-  storageBucket: "cryptoolympia.firebasestorage.app",
-  messagingSenderId: "359116637321",
-  appId: "1:359116637321:web:ab11c9b2a2f351265c3258"
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain:import.meta.env.VITE_AUTHDOMAIN ,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID
 };
 
 export const app = initializeApp(firebaseConfig)

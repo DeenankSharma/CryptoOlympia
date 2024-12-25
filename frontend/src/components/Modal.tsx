@@ -60,7 +60,7 @@ export default function TransitionsModal() {
             >
                 <Fade in={open}>
                     <Box sx={style}>
-                        <Card className="w-full bg-neutral-900 border-none shadow-[5px_5px_15px_rgba(0,0,0,0.3),-5px_-5px_15px_rgba(255,255,255,0.05)] p-6">
+                        <Card className="w-full bg-neutral-900 border-none shadow-[5px_5px_15px_rgba(0,0,0,0.3),-5px_-5px_15px_rgba(255,255,255,0.05)] p-0">
                             <CardContent className="pt-6">
                                 <Tabs defaultValue="login" className="w-full">
                                     <TabsList className="grid w-full grid-cols-2 bg-neutral-800">
