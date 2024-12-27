@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import bodyParser from "body-parser";
-import {router as UploadRouter} from './routers/upload_ques_router.js';
+import {router as QuesRouter} from './routers/ques_router.js';
 import authMiddleware from "./middleware/auth_middleware.js";
 
 dotenv.config();
@@ -17,10 +17,11 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.json({limit:'1000mb'}));
 
 
-app.get('/test',authMiddleware,(req,res)=>{
-    res.json({"message":"pookie"});
-})
-app.post('/upload', authMiddleware, UploadRouter);
+// app.get('/test',authMiddleware,(req,res)=>{
+//     res.json({"message":"pookie"});
+// })
+
+app.post('/upload', authMiddleware, QuesRouter);
 
 app.listen(port, () => {
   console.log(`Listening on port ${port}`)
