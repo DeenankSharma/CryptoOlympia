@@ -10,6 +10,7 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
+import { useAuth } from '@/context/AuthContext';
 // import { useAuth } from '@/context/AuthContext';
 
 interface QuestionUploadModalProps {
@@ -29,8 +30,9 @@ const QuestionUploadModal = ({ open, onClose }: QuestionUploadModalProps) => {
     reward: '',
     content: null,
   });
+  
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
-//   const {currentUser} = useAuth();
+  const {currentUser} = useAuth();
 
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
@@ -47,6 +49,7 @@ const QuestionUploadModal = ({ open, onClose }: QuestionUploadModalProps) => {
 
   const handleSubmit = () => {
     console.log(formData);
+    console.log(currentUser)
     onClose();
   };
 

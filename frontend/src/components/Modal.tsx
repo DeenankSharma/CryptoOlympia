@@ -31,10 +31,11 @@ export default function TransitionsModal() {
         e.preventDefault();
         if(!isSigning){
             setisSigning(true);
-            doSignInWithGoogle().catch(err=>{
+            doSignInWithGoogle().then().catch(err=>{
                 console.log(err);
                 setisSigning(false);
                 if(userLoggedIn){
+                    console.log('dcmslmedcmsedcmksjmskj')
                     navigate('/');
                 }
             });
