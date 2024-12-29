@@ -35,3 +35,22 @@ export async function getDocuments(email) {
         await client.close(); 
     }
 }
+
+export async function getAllDocuments() {
+    try {
+        await client.connect();
+        const database = client.db("CryptoOlympia");
+        const collection = database.collection("question_uploads");
+        const documents = await collection.find().toArray();
+        if (documents.length === 0) {
+            console.log("No documents found!");
+            return [];
+        }
+        return documents;
+    } catch (error) {
+        console.error('Error finding documents:', error);
+        throw error;
+    } finally {
+        await client.close(); 
+    }
+}

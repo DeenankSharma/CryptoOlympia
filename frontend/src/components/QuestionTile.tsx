@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge"
 
 interface QuestionTileProps {
   title: string
+  text:string;
   imageUrl: string
   rewardEth: string
   isSolved: boolean
@@ -12,6 +13,7 @@ interface QuestionTileProps {
 
 const QuestionTile = ({ 
   title, 
+  text,
   imageUrl, 
   rewardEth, 
   isSolved, 
@@ -38,6 +40,7 @@ const QuestionTile = ({
         <div className="p-4 space-y-2">
           <div className="flex items-center justify-between">
             <h3 className="font-semibold text-lg truncate">{title}</h3>
+            <h5 className="font-semibold text-lg truncate">{text}</h5>
             <span className="text-sm font-medium">
               {rewardEth} ETH
             </span>

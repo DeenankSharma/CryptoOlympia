@@ -36,7 +36,7 @@ export default function LandingPage() {
         case 2:
             return (
                 <>  
-                 <Navbar />
+                    <Navbar />
                     <About/>
                 </>
             )
