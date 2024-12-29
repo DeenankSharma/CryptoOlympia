@@ -24,3 +24,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+*./backend/firebase/cryptoolympia-firebase-adminsdk-lyae5-d906212ede.json
+
